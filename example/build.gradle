@@ -8,8 +8,8 @@ sourceSets.main.java.srcDirs = ["src/main/java"]
 publishing {
     publications {
         maven(MavenPublication) {
-            groupId = 'com.github.Chi-Re.ChireUtil'
-            artifactId = 'core'
+            groupId = "$groupName"+"."+project.archivesBaseName
+            artifactId = 'example'
             version = "$Version"
             from components.java
         }
@@ -21,4 +21,5 @@ dependencies {
         mavenCentral()
         maven{ url 'https://www.jitpack.io' }
     }
+    //这里写你需要的依赖，但是局部
 }
