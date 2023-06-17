@@ -9,7 +9,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId = "$groupName"+"."+project.archivesBaseName
-            artifactId = 'example'
+            artifactId = 'example'//你的模块名称
             version = "$Version"
             from components.java
         }
