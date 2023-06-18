@@ -13,6 +13,4 @@
 当然，你可以自己制作模块。<br>
 在`settings.gradle`下写入`include '模块名称'`并且创建同名的文件夹在项目根目录中，然后类似`example`一样就行。
 
-需要注意的是，如果想让别人访问你的模块，需要将模块命名为`模块名.util`
-
 记得更改`build.gradle`的`groupName`。
